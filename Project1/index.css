@@ -11,7 +11,8 @@
 
 
 body {
-    /* overflow: hidden; */
+    overflow-x: hidden;
+    background-color: black;
 }
 
 
@@ -161,13 +162,13 @@ img {
 }
 
 .social.textAll {
-    left: calc(2335 / var(--windowW) * 100%);
-    top: calc(494 / var(--windowH) * 100%);
+    left: calc(1940 / var(--windowW) * 100%);
+    top: calc(454 / var(--windowH) * 100%);
 }
 
 .social.kaylee {
-    left: calc(1947 / var(--windowW) * 100%);
-    top: calc(249 / var(--windowH) * 100%);
+    left: calc(930 / var(--windowW) * 100%);
+    top: calc(347/ var(--windowH) * 100%);
 }
 
 /* parent reminder */
@@ -176,8 +177,8 @@ img {
     aspect-ratio: 1082/610.88;
     position: absolute;
 
-    left: calc(2593 / var(--windowW) * 100%);
-    top: calc(1058 / var(--windowH) * 100%);
+    left: calc(1533 / var(--windowW) * 100%);
+    top: calc(1000 / var(--windowH) * 100%);
 }
 
 
@@ -188,8 +189,8 @@ img {
     aspect-ratio: 990.77/1161.5;
     position: absolute;
 
-    left: calc(1000 / var(--windowW) * 100%);
-    top: calc(1047 / var(--windowH) * 100%);
+    left: calc(2833 / var(--windowW) * 100%);
+    top: calc(986 / var(--windowH) * 100%);
 }
 
 
@@ -217,13 +218,13 @@ img {
 }
 
 .work.marchFestSocial {
-    left: calc(3357 / var(--windowW) * 100%);
-    top: calc(1464 / var(--windowH) * 100%);
+    left: calc(3493 / var(--windowW) * 100%);
+    top: calc(1005 / var(--windowH) * 100%);
 }
 
 .work.marchFestLanding {
-    left: calc(3204 / var(--windowW) * 100%);
-    top: calc(1247 / var(--windowH) * 100%);
+    left: calc(3299 / var(--windowW) * 100%);
+    top: calc(1520 / var(--windowH) * 100%);
 }
 
 .work.eventBrochure {
