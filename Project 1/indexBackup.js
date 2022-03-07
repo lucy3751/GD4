@@ -34,10 +34,10 @@ function dragElement(elmnt) {
         document.onmousemove = elementDrag;
 
         // the active div popups (top layer)        
-        for (i=1; i <=25; i++){
-            document.getElementById(`mydiv${i}`).style.zIndex = 1;
-        }
-        elmnt.style.zIndex = 10;
+        // for (i=1; i <=25; i++){
+        //     document.getElementById(`mydiv${i}`).style.zIndex = 1;
+        // }
+        // elmnt.style.zIndex = 10;
     }
 
     function elementDrag(e) {
@@ -65,12 +65,12 @@ function dragElement(elmnt) {
         let windowHeight = window.innerHeight;
         let windowWidth = window.innerWidth;
 
-        // console.log("divHeight", divHeight);
-        // console.log("divTopPoint", divTopPoint);
-        // console.log("divWidth", divWidth);
-        // console.log("divLeftPoint", divLeftPoint);
-        // console.log("windowHeight", windowHeight);
-        // console.log("windowWidth", windowWidth);
+        console.log("divHeight", divHeight);
+        console.log("divTopPoint", divTopPoint);
+        console.log("divWidth", divWidth);
+        console.log("divLeftPoint", divLeftPoint);
+        console.log("windowHeight", windowHeight);
+        console.log("windowWidth", windowWidth);
 
 
         // restrict the popup so that it cannot move out of the window
@@ -78,9 +78,9 @@ function dragElement(elmnt) {
             elmnt.style.top = `0px`;
         }
 
-        // if(divTopPoint+divHeight > windowHeight){
-        //     elmnt.style.top = `${windowHeight-divHeight}px`;
-        // }
+        if(divTopPoint+divHeight > windowHeight){
+            elmnt.style.top = `${windowHeight-divHeight}px`;
+        }
 
         if(divLeftPoint<0){
             elmnt.style.left = `0px`;
@@ -97,3 +97,6 @@ function dragElement(elmnt) {
         document.onmousemove = null;
     }
 }
+
+console.log(typeof window.innerHeight);
+
