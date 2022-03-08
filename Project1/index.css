@@ -7,6 +7,14 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+
+    /* disable highlighting */
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+    -khtml-user-select: none; 
+    -moz-user-select: none;
+    -ms-user-select: none; 
+    user-select: none; 
 }
 
 
@@ -79,7 +87,7 @@ img {
     width: calc(893.4 / var(--windowW) * 100%);
     aspect-ratio: 893.4/567.57;
     left: calc(1603.62 / var(--windowW) * 100%);
-    top: calc(195.62 / var(--windowH) * 100%);
+    top: calc(350 / var(--windowH) * 100%);
 }
 
 .negativeThoughts.useless {
@@ -162,8 +170,8 @@ img {
 }
 
 .social.textAll {
-    left: calc(1940 / var(--windowW) * 100%);
-    top: calc(454 / var(--windowH) * 100%);
+    left: calc(1800 / var(--windowW) * 100%);
+    top: calc(504 / var(--windowH) * 100%);
 }
 
 .social.kaylee {
@@ -177,8 +185,8 @@ img {
     aspect-ratio: 1082/610.88;
     position: absolute;
 
-    left: calc(1533 / var(--windowW) * 100%);
-    top: calc(1000 / var(--windowH) * 100%);
+    left: calc(2100 / var(--windowW) * 100%);
+    top: calc(1100 / var(--windowH) * 100%);
 }
 
 

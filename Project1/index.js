@@ -6,26 +6,14 @@ for (i=1; i <=25; i++){
 }
 
 
-// dragElement(document.getElementById("mydiv1"));
-// dragElement(document.getElementById("mydiv2"));
-// console.log("hello")
-
 function dragElement(elmnt) {
-    // var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
-    // if (document.getElementById(elmnt.id + "header")) {
-    //     /* if popup top bar is present, you can only move the popup by dragging this top bar:*/
-    //     document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
-    // } else {
-        /* otherwise, you can move the popup anywhere*/
-        elmnt.onmousedown = dragMouseDown;
-    // }
+
+    elmnt.onmousedown = dragMouseDown;
+
 
     function dragMouseDown(e) {
         e = e || window.event;
         e.preventDefault();
-        // get the mouse cursor position at startup:
-        // pos3 = e.clientX;
-        // pos4 = e.clientY;
 
         // when mouse is not pressed:
         document.onmouseup = closeDragElement;
@@ -65,13 +53,6 @@ function dragElement(elmnt) {
         let windowHeight = window.innerHeight;
         let windowWidth = window.innerWidth;
 
-        // console.log("divHeight", divHeight);
-        // console.log("divTopPoint", divTopPoint);
-        // console.log("divWidth", divWidth);
-        // console.log("divLeftPoint", divLeftPoint);
-        // console.log("windowHeight", windowHeight);
-        // console.log("windowWidth", windowWidth);
-
 
         // restrict the popup so that it cannot move out of the window
         if(divTopPoint<0){
@@ -97,3 +78,5 @@ function dragElement(elmnt) {
         document.onmousemove = null;
     }
 }
+
+console.log("Project 1")
